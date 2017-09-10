@@ -1,0 +1,30 @@
+<?php
+
+define('DB_HOST', 'localhost');
+define('DB_NAME', 'hihihi1');
+define('DB_USER','root');
+define('DB_PASSWORD','');
+
+$con=mysql_connect(DB_HOST,DB_USER,DB_PASSWORD) or die("Failed to connect to MySQL: " . mysql_error());
+$db=mysql_select_db(DB_NAME,$con) or die("Failed to connect to MySQL: " . mysql_error());
+
+
+function getflights()
+{
+	$source1 = $_POST['source'];
+	$destination1 = $_POST['destination'];
+	//$query = mysql_query("SELECT flight_id FROM routes WHERE source = '$_POST[source]' AND destination = '$_POST[destination]'") or die(mysql_error());
+	$query = mysql_query("SELECT * FROM routes");
+	if($query!=false)
+	{
+ 		echo $query;
+	}
+	
+}
+
+if(isset($_POST['submit']))
+{
+	getflights();
+}
+?>
+

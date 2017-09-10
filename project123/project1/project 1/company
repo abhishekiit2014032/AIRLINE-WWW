@@ -1,0 +1,88 @@
+<html>
+<head> 
+<title>background</title>
+<link rel="icon" type="image/jpg" href = "game.jpg">;
+<style type ="text/css">
+*{
+left:0;
+right:0;
+top:0;
+}
+body{
+	font-family: "Times New Roman", Georgia, Serif;
+}
+.background-wrap {
+position: fixed;
+z-index:-1000;
+width:100%;
+height:100%;
+overflow: hidden;
+top: 0;
+left: 0;
+}
+#video-bg-elem {
+position : absolute;
+top : 0;
+left:0;
+min-height:100%;
+min-width:100%;
+}
+.content 
+{
+position:absolute;
+width:100%;
+height:100%;
+background-color: rgba(0,0,0,0.7);
+}
+.content h1{
+text-align:left;
+text-shadow : 0.1em 0.1em 0.05em black;
+font-size:65px;
+color:white;
+padding-top: 5%;
+}
+
+.content p
+{
+text-align:center;
+font-size:35px;
+color:#aaa;
+
+letter-spacing:3px;
+
+}
+.content h2{
+text-align:center;
+font-size:65px;
+color:#ff0000;
+
+}
+.content h3{
+position: absolute;
+        width: 80px; 
+        height: 80px; 
+        left: 50%;
+        top: 80%;
+        margin-left: -50px;
+        margin-top: -50px; 
+}
+
+</style>
+
+</head>
+<body>
+<div class ="background-wrap">
+<video id ="video-bg-elem" preload ="auto" autoplay ="true" loop = "loop" muted ="muted" >
+<source src="Beautiful Nature Spring 1080p HD.mp4" type = " video/mp4">
+video is not sup</video>
+</div>
+<div class = "content">
+<h1>video background</h1>
+<p>game</p>
+<h2>This is starting of my web development</h2>
+<h3><a href="link1.html"><img src = "next_page.gif"></a>
+</h3>
+</div>
+
+</body>
+</html>

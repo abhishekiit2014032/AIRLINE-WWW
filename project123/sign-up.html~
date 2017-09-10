@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Sign-Up</title>
+ <script type="text/javascript">
+    function validateForm()
+    {
+    var a=document.forms["reg"]["name"].value;
+    var b=document.forms["reg"]["email"].value;
+    var c=document.forms["reg"]["user"].value;
+    var d=document.forms["reg"]["pass"].value;
+    var e=document.forms["reg"]["cpass"].value;
+    if ((a==null || a=="") && (b==null || b=="") && (c==null || c=="") && (d==null || d=="") && (e==null || e=="") && (f==null || f==""))
+      {
+      alert("All Field must be filled out");
+      return false;
+      }
+    if (a==null || a=="")
+      {
+      alert("name must be filled out");
+      return false;
+      }
+    if (b==null || b=="")
+      {
+      alert("email must be filled out");
+      return false;
+      }
+    if (c==null || c=="")
+      {
+      alert("user must be filled out");
+      return false;
+      }
+    if (d==null || d=="")
+      {
+      alert("pass must be filled out");
+      return false;
+      }
+    if (e==null || e=="")
+      {
+      alert("cpass must be filled out");
+      return false;
+      }
+   if(d!=e)
+	{
+	alert("its should be same as password");
+	return false;
+	}
+    }
+    </script>
+<link rel="stylesheet" type="text/css" href="css/signupstyle.css">
+</head>
+<body id="body-color">
+<div id="Sign-Up">
+<fieldset style="width:30%"><legend>Registration Form</legend>
+<table border="0">
+<tr>
+<form  onsubmit="return validateForm()" name="reg" method="POST" action="connectivity-sign-up.php">
+<td>Name</td><td> <input type="text" name="name"></td>
+</tr>
+<tr>
+<td>Email</td><td> <input type="text" name="email"></td>
+</tr>
+<tr>
+<td>UserName</td><td> <input type="text" name="user"></td>
+</tr>
+<tr>
+<td>Password</td><td> <input type="password" name="pass"></td>
+</tr>
+<tr>
+<td>Confirm Password </td><td><input type="password" name="cpass"></td>
+</tr>
+<tr>
+<td><input id="button" type="submit" name="submit" value="submit"></td>
+</tr>
+</form>
+</table>
+</fieldset>
+</div>
+</body>
+</html>

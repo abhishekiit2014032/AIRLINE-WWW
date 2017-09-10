@@ -1,0 +1,195 @@
+<html>
+<head> 
+<title>background</title>
+<link rel="icon" type="image/jpg" href = "game.jpg">;
+<link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Romanesco' rel='stylesheet' type='text/css'>
+<style type ="text/css">
+*{
+left:0;
+right:0;
+top:0;
+}
+body{
+	font-family: "Times New Roman", Georgia, Serif;
+}
+.content img{
+ 
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
+  height:60px;
+  width:60px;
+  
+}
+img:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+.background-wrap {
+position: fixed;
+z-index:-1000;
+width:100%;
+height:100%;
+overflow: hidden;
+top: 0;
+left: 0;
+}
+#video-bg-elem {
+position : absolute;
+top : 0;
+left:0;
+min-height:100%;
+min-width:100%;
+}
+.content 
+{
+position:absolute;
+width:100%;
+height:100%;
+background-color: rgba(0,0,0,0.7);
+}
+.content h1{
+text-align:left;
+text-shadow : 0.1em 0.1em 0.05em black;
+font-size:65px;
+color:white;
+padding-top: 5%;
+}
+
+.content p
+{
+text-align:center;
+font-size:35px;
+color:#aaa;
+
+letter-spacing:3px;
+
+}
+.content h2{
+text-align:center;
+font-size:65px;
+color:#ff0000;
+
+}
+.content h3{
+position: absolute;
+        width: 80px; 
+        height: 80px; 
+        left: 50%;
+        top: 80%;
+        margin-left: -50px;
+        margin-top: -50px; 
+}
+ul {
+    list-style-type: none;
+    margin-top: 0px;
+    font-size:20px;
+    padding:9px;
+    overflow: hidden;
+
+
+   
+    opacity:0.8;
+    color:#fff;
+    border-color: #C0C0C0;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 30px;
+    text-decoration: none;
+   
+}
+
+/* Change the link color to #111 (black) on hover */
+   
+li {
+    float: left;
+}
+.a1 h1{
+	position: absolute;
+  font-size: 80px;
+  top:90px;
+  left:450px;
+  font-family: 'Romanesco', cursive;
+}
+
+.li  
+{
+     color:#fff;
+  border-radius:3px 3px 3px 3px;
+  
+  border-color: #fff;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+	
+}
+.a1 img{
+position: absolute;
+margin-top:70px;
+margin-left: 430px;
+
+}
+.a1 h1{
+  position: absolute;
+  top:140px;
+  left:290px;
+  color:#5C5C5C;
+}
+.content h1{
+text-align:center;
+text-shadow : 0.1em 0.1em 0.05em black;
+font-size:65px;
+color:red;
+padding-top: 5%;
+}
+li a:hover {
+   
+    color:#fff;
+  border-radius:3px 3px 3px 3px;
+  
+  border-color: #fff;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+  
+
+
+}
+body{
+  font-family: 'Dancing Script', Georgia, Serif;
+}
+
+.active{
+   color:blue;
+  }
+</style>
+
+</head>
+<body>
+<div class ="background-wrap">
+
+<video id ="video-bg-elem" preload ="auto" autoplay ="true" loop = "loop" muted ="muted" >
+<source src="planes4.mp4" type = " video/mp4">
+video is not sup</video>
+</div>
+<div class = "content">
+<ul>
+<li><img src="Untitled-1.png" height="50px" width="70px"></li>
+  <li><a href="index.php">Home</a></li>
+  <li><a class="active" href="company.html">Company</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li style="float:right"><a  href="about.html">About</a></li>
+</ul>
+
+</div>
+<div class="a1">
+<img src="cool.png">
+<h1>
+"Come fly  with us at Airyatra.com"
+</h1>
+</div>
+</body>
+</html>

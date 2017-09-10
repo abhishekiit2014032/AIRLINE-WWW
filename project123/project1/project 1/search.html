@@ -1,0 +1,165 @@
+<html>
+<head>
+<title>search</title>
+<style>
+*{
+margin:0;
+padding:0;
+border:0;
+}
+
+.table7
+{
+background-color:#0040ff;
+height:257px;
+width:1366px;
+}
+.link1
+{
+color:white;
+background-color:#FF0080;
+line-height:40px;
+text-align:center;
+}
+.link1:hover {
+color:white;
+background-color:#B4045F;
+transition:all 0.3s ease-in 0s;
+cursor: pointer;
+}
+
+.link2
+{
+color:white;
+line-height:40px;
+text-align:center;
+background-color:#B4045F;
+}
+
+.link2:hover {
+color:white;
+background-color:black;
+transition:all 0.3s ease-in 0s;
+}
+.large
+{
+    font-size: 13pt;
+    height: 22px;
+	
+}
+.large2
+{
+    font-size: 10pt;
+    height: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px 25px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+    li a:hover {
+    background-color: #111;
+	color:red;
+}
+
+input[type=text] {
+  width: 170px;
+  -webkit-transition: width .35s ease-in-out;
+  transition: width .35s ease-in-out;
+}
+input[type=text]:focus {
+  width: 250px;
+  background-color: cyan;
+}
+input[type=text1] {
+  width: 170px;
+  -webkit-transition: width .35s ease-in-out;
+  transition: width .35s ease-in-out;
+}
+input[type=text1]:focus {
+  width: 250px;
+  background-color: cyan;
+}
+h1{
+color:black;
+}
+h1:hover{
+color:#00e600;
+}
+</style>
+</head>
+<body>
+
+<ul>
+<li><img src="Untitled-1.png" height="50px" width="70px"></li>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="#news">Company</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li style="float:right"><a class="active" href="#about">About</a></li>
+</ul>
+
+
+<img src ="global.png" height="340px" width="1366px" >
+<table class="table7">
+<tr>
+<td width="300px"></td><td>
+<MARQUEE BEHAVIOR=SLIDE><h1>Check Your Flight Here</h1></MARQUEE >
+<br>
+<br>
+<form >
+
+  <b>SOURCE:</b><input type="text" name ="dname" class="large"placeholder="Source">
+  <b>DESTINATION: </b><input type="text" name ="sname" class="large" placeholder="Destination"><br>
+  <br>
+  <fieldset>
+                 <label><b>MONTH<b></label>
+                  <label height="20px"> 
+                  <select class="select-style" name="BirthMonth">
+                  <option value="">enter the month</option>
+                  <option  value="01">January</option>
+                  <option value="02">February</option>
+                  <option value="03" >March</option>
+                  <option value="04">April</option>
+                  <option value="05">May</option>
+                  <option value="06">June</option>
+                  <option value="07">July</option>
+                  <option value="08">August</option>
+                  <option value="09">September</option>
+                  <option value="10">October</option>
+                  <option value="11">November</option>
+                  <option value="12" >December</option>
+                  </label>
+                 </select>    
+                <label><b>Day</b><input  maxlength="2"  placeholder="Day" required="" class="large2"></label>
+                <label><b>Year </b><input  maxlength="4"  placeholder="Year" required="" class="large2"></label>
+              </fieldset><br>
+<table cellspacing="0" cellpadding="0" border="0">
+<tr height="40px" ><td width="130px" class="link1">SUBMIT</td>
+<td width="50px" class="link2"><font size="3px" ></font></td></tr>
+</table>
+</form>
+</td>
+</tr>
+
+</table>
+
+
+</body>
+</html>
